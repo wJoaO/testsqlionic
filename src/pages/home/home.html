@@ -1,17 +1,15 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Baixar itens</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <ion-grid>
+    <button ion-button block (click)="download(1)">Replicar dados localmente</button>
+    <button ion-button block (click)="download(10)">Replicar dados localmente 10x</button>
+    <button ion-button block (click)="download(50)">Replicar dados localmente 50x</button>
+
+  </ion-grid>
 </ion-content>
